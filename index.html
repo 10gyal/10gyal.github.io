@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
         }
         header {
             text-align: center;
-            padding: 20px;
+            padding: 40px 20px 30px;
             background-color: #f2f2f2;
         }
         section {
@@ -22,6 +22,13 @@
         h1, h2 {
             color: #333;
         }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project h3 {
+            margin-bottom: 5px;
+            color: #222;
+        }
         a {
             color: #007bff;
             text-decoration: none;
@@ -29,27 +36,75 @@
         li {
             margin-bottom: 10px;
         }
-        img {
-            border-radius: 10%; /* Make the image circular */
-            width: 150px; /* Set the width and height to the same value for a perfect circle */
-            height: 150px;
-            max-width: 100%;
-            height: auto;
+        .profile-card {
+            width: 300px;
+            margin: 0 auto 18px;
+            cursor: pointer;
+        }
+        .profile-card:focus-visible {
+            outline: 2px solid #0056b3;
+            outline-offset: 4px;
+        }
+        .profile-flip {
+            position: relative;
+            width: 100%;
+            height: 300px;
+        }
+        .profile-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+        .profile-face.front {
+            opacity: 1;
+        }
+        .profile-face.back {
+            opacity: 0;
+        }
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover; /* Crop long edge while keeping focus */
+            object-position: 52% 52%;
+            display: block;
+        }
+        .profile-face.back .profile-photo {
+            transform-origin: center;
+        }
+        .profile-card.show-back .profile-face.front {
+            opacity: 0;
+        }
+        .profile-card.show-back .profile-face.back {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="assets/profile.jpg" alt="Your Profile Picture">
+        <div class="profile-card" id="profileCard" role="button" tabindex="0" aria-pressed="false" aria-label="Show second photo">
+            <div class="profile-flip">
+                <div class="profile-face front">
+                    <img class="profile-photo" src="assets/profile.jpg" alt="Tashi Tengyal at Paro Taktsang Monastery">
+                </div>
+                <div class="profile-face back">
+                    <img class="profile-photo" src="assets/good_pic.png" alt="Tashi Tengyal portrait">
+                </div>
+            </div>
+        </div>
         <h1>Tashi Tengyal</h1>
-        <p><a href="mailto:t10gyal@snu.ac.kr">Email</a> | <a href="https://www.linkedin.com/in/tashi-tengyal/" target="_blank">LinkedIn</a> | <a href="https://github.com/10gyal">GitHub</a></p>
+        <p><a href="mailto:tashi10gyal@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/tashi-tengyal/" target="_blank">LinkedIn</a> | <a href="https://github.com/10gyal">GitHub</a> | <a href="https://x.com/tastengyal" target="_blank" rel="noopener">X</a></p>
 
     </header>
 
     <section>
         <h2>About Me</h2>
-        <p>I am a senior at Seoul National University majoring in Computer Science and Engineering. I also work as an NLP engineer at <a href="https://www.rezi.ai/">Rezi</a>.</p>
+        <p>I am an engineer at <a href="https://www.rezi.ai/" target="_blank" rel="noopener">Rezi</a>, where I lead and build AI systems specialized for HR industry.</p>
     </section>
 
     <section>
@@ -58,17 +113,59 @@
     </section>
 
     <section>
+        <h2>Education</h2>
+        <p>Bachelors of Computer Science and Engineering (2020–2024), Seoul National University, South Korea.</p>
+    </section>
+
+    <section>
         <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/10gyal/skill-extraction">Skill Extraction</a> is an ensemble of models for extracting different classes of skills from a job description. I built it during my internship at rezi.ai. This also served as my <a href="https://drive.google.com/file/d/1C9LSpn0W61Iyp-QLFMZ2RSx-Y8RyKkM0/view?usp=sharing">graduation thesis</a>
-            </li>
-            <li><a href="https://github.com/10gyal/exp_key_relevance">exp_key_relevance</a> is a combination of token and sentence level vector similarity comparisons for finding the most relevant experience in a resume given a keyword.
-            </li>
-            <li>Built a recommendation system for ranking resumes based on keywords. The system was a hybrid of tradtional keyword matching and vector based (semantic) searches.  
-            </li>
-            <li>Worked on a capstone project in collaboration with KAIST and SherpaSpace to predict infections in pineapples in a farm in Malaysia. Delivered two time series models, CNN & LSTM, that predicted infections with 97% & 98% accuracies respectively. 
-            </li>
-        </ul>
+        <div class="project">
+            <h3>Agentic Virtual Interview</h3>
+            <ul>
+                <li>Built an interactive interviewer agent that probes candidates with behavioral and technical prompts derived from job descriptions.</li>
+                <li>Scores responses with LLM-based rubrics and delivers targeted coaching feedback plus follow-up practice questions.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>MultiAgent System for Job Applications</h3>
+            <ul>
+                <li>Coordinated planner-executor agents to auto-generate tailored resumes, cover letters, and email drafts for each application.</li>
+                <li>Integrated Rezi's resume intelligence APIs with external job feeds to create fully automated submission workflows.</li>
+                <li><a href="https://www.rezi.ai/v2/agent" target="_blank" rel="noopener">View</a></li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Skill Extraction</h3>
+            <ul>
+                <li>Ensemble of classifiers that extract different classes of skills from job descriptions.</li>
+                <li>Developed during my internship at Rezi and later expanded into my <a href="https://drive.google.com/file/d/1C9LSpn0W61Iyp-QLFMZ2RSx-Y8RyKkM0/view?usp=sharing">graduation thesis</a>.</li>
+                <li><a href="https://github.com/10gyal/skill-extraction" target="_blank" rel="noopener">Code</a></li>
+
+            </ul>
+        </div>
+        <div class="project">
+            <h3>exp_key_relevance</h3>
+            <ul>
+                <li>Combines token-level similarity with sentence embeddings to rank resume experiences for a target keyword.</li>
+                <li>Provides interpretable evidence by surfacing both lexical and semantic matches.</li>
+                <li><a href="https://github.com/10gyal/exp_key_relevance" target="_blank" rel="noopener">Code</a></li>
+
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Resume Recommendation System</h3>
+            <ul>
+                <li>Hybrid ranking pipeline that pairs traditional keyword matching with vector search to match resumes to recruiter requests.</li>
+                <li>Improved recommendation precision on sparse resumes by blending TF-IDF features with sentence-transformer embeddings.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Pineapple Infection Forecasting</h3>
+            <ul>
+                <li>Capstone collaboration with KAIST and SherpaSpace to monitor disease spread across Malaysian pineapple farms.</li>
+                <li>Delivered CNN and LSTM time-series models that achieved 97% and 98% accuracy for infection prediction.</li>
+            </ul>
+        </div>
     </section>
     <section>
         <h2>Publications</h2>
@@ -78,8 +175,31 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 10gyal</p>
+        <p>&copy; 2025 10gyal</p>
     </footer>
 
+    <script>
+        (function () {
+            const card = document.getElementById('profileCard');
+
+            if (!card) {
+                return;
+            }
+
+            const togglePhoto = () => {
+                const showBack = card.classList.toggle('show-back');
+                card.setAttribute('aria-pressed', String(showBack));
+                card.setAttribute('aria-label', showBack ? 'Show first photo' : 'Show second photo');
+            };
+
+            card.addEventListener('click', togglePhoto);
+            card.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    togglePhoto();
+                }
+            });
+        })();
+    </script>
 </body>
 </html>
