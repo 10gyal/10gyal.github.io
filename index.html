@@ -107,10 +107,10 @@
         <p>I am an engineer at <a href="https://www.rezi.ai/" target="_blank" rel="noopener">Rezi</a>, where I lead and build AI systems specialized for HR industry.</p>
     </section>
 
-    <section>
+    <!-- <section>
         <h2>Interests</h2>
-        <p>I enjoy solving a range of NLP problems. I have hands on experience starting from curating datasets, tokenization and embedding schemes, all the way to finetuning opensource LLMs such as Mixtral with QLoRA. Currently, I am working on customer service dialogue generation in Korean.</p>
-    </section>
+        <p>I enjoy solving a range of  problems. I have hands on experience starting from curating datasets, tokenization and embedding schemes, all the way to finetuning opensource LLMs such as Mixtral with QLoRA. Currently, I am working on customer service dialogue generation in Korean.</p>
+    </section> -->
 
     <section>
         <h2>Education</h2>
@@ -122,16 +122,29 @@
         <div class="project">
             <h3>Agentic Virtual Interview</h3>
             <ul>
-                <li>Built an interactive interviewer agent that probes candidates with behavioral and technical prompts derived from job descriptions.</li>
-                <li>Scores responses with LLM-based rubrics and delivers targeted coaching feedback plus follow-up practice questions.</li>
+                <li>Building...</li>
             </ul>
         </div>
         <div class="project">
             <h3>MultiAgent System for Job Applications</h3>
             <ul>
-                <li>Coordinated planner-executor agents to auto-generate tailored resumes, cover letters, and email drafts for each application.</li>
-                <li>Integrated Rezi's resume intelligence APIs with external job feeds to create fully automated submission workflows.</li>
+                <li>Led the design of a multi-agent system using a cognitive graph architecture for collaborative reasoning, with state-centric routing and command-based control to ensure deterministic flows and resilient interactions. Currently serves thousands of users every day.</li>
+                <li>Optimized Cognition and Context Engineering: Utilized a heterogeneous LLM ensemble for role-tuned deliberation, incorporating context-aware priming, tunable inference, rolling summarization, and shared memory mechanisms like hierarchical recall to enhance efficient multi-agent cognition and prevent context overload.</li>
                 <li><a href="https://www.rezi.ai/v2/agent" target="_blank" rel="noopener">View</a></li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Job Search Engine</h3>
+            <ul>
+                <li>Designed and implemented a job search engine with Elasticsearch (ES) with the following capabilities:
+                    <ul>
+                        <li>High-volume ingestion and processing pipeline for thousands of daily job postings</li>
+                        <li>Multi-criteria and hierarchical filtering (by role, skills, location, seniority, and education) via dynamically constructed ES queries</li>
+                        <li>Real-time, scalable query autocompletion and semantic expansion using LLM and embedding-powered logic</li>
+                        <li>Custom scoring and ranking pipelines that integrate field-aware weights, duration/experience-matching, and result deduplication</li>
+                    </ul>
+                </li>
+                <li><a href="https://www.rezi.ai/job-search" target="_blank" rel="noopener">View</a></li>
             </ul>
         </div>
         <div class="project">
@@ -144,7 +157,7 @@
             </ul>
         </div>
         <div class="project">
-            <h3>exp_key_relevance</h3>
+            <h3>Keyword-Experience Relevance</h3>
             <ul>
                 <li>Combines token-level similarity with sentence embeddings to rank resume experiences for a target keyword.</li>
                 <li>Provides interpretable evidence by surfacing both lexical and semantic matches.</li>
@@ -153,7 +166,7 @@
             </ul>
         </div>
         <div class="project">
-            <h3>Resume Recommendation System</h3>
+            <h3>Talent Recommendation System</h3>
             <ul>
                 <li>Hybrid ranking pipeline that pairs traditional keyword matching with vector search to match resumes to recruiter requests.</li>
                 <li>Improved recommendation precision on sparse resumes by blending TF-IDF features with sentence-transformer embeddings.</li>
