@@ -29,10 +29,11 @@ Advisor: [Prof. Eun Seo Jo](https://www.unsojo.com/) (Cornell University / SNU v
 **AI Engineer**  
 *[Rezi](https://rezi.ai) – AI-powered resume & job application platform, Seoul*  
 *April 2023 – Present*  
-- Founded and currently lead the AI Engineering team.  
+- Established and currently lead the AI Engineering team.  
 - Led development of a LangGraph-based multi-agent system capable of building a complete job application from scratch.  
 - Designed and deployed hybrid search engine for jobs (BM25 + dense retrieval) serving thousands of job seekers daily.  
 - Built Named Entity Recognition pipeline for structured skill extraction from resumes and job descriptions.
+- These projects directly contributed to scaling the platform’s user base from 500,000 to over 4 million users.
 
 **Founder**  
 *llmSearch.app – AI Answer Engine Analytics Platform*  
