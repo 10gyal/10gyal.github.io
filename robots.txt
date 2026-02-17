@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://10gyal.github.io/sitemap.xml
