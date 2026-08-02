@@ -27,10 +27,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an AI engineer focused on building practical LLM systems for real-world products. My core interests are planning, reasoning, memory, and decision-making in LLM agents.
+I am an AI engineer focused on building practical LLM systems for real-world products. My core interests are planning, reasoning, memory, and decision-making in LLM agents. 
 
-I completed my B.S. in Computer Science and Engineering at Seoul National University, where I was awarded the Global Korean Scholarship and the CSE Young Courage Award.
+At [Rezi](https://rezi.ai), I lead AI engineering work on multi-agent systems, retrieval, and information extraction for job applications and career workflows. I primarily use Python with Langchain and DSPy at work.
 
-At [Rezi](https://rezi.ai), I lead AI engineering work on multi-agent systems, retrieval, and information extraction for job applications and career workflows. I also founded [llmSearch.app](https://llmsearch.app), an analytics platform that tracks brand visibility and source citations across major AI answer engines.
-
-My technical toolkit includes Python, Go, C/C++, and Java, with extensive use of PyTorch, TensorFlow, LangChain, DSPy, spaCy, and ElasticSearch.
+On the side, I like conducting toy experiments (often reproduction or tangential) mainly for test-time scaling methods. But lately, I have been spending some time learning RL for post-training. I document these experiments in my blogs.
