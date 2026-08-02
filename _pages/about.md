@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: CS @ Seoul National University. Applied NLP @ Rezi.ai
+subtitle: CS @ Seoul National University. Applied AI @ Rezi.ai
 
 profile:
   align: right
@@ -11,7 +11,6 @@ profile:
   more_info: >
     <p>Seoul, South Korea</p>
     <p>AI Engineer at Rezi</p>
-    <p>Founder, llmSearch.app</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,7 +26,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an AI engineer focused on building practical LLM systems for real-world products. My core interests are planning, reasoning, memory, and decision-making in LLM agents. 
+I am an AI engineer focused on building practical LLM systems for real-world products. My core interests are planning, reasoning, memory, and decision-making in LLM agents.
 
 At [Rezi](https://rezi.ai), I lead AI engineering work on multi-agent systems, retrieval, and information extraction for job applications and career workflows. I primarily use Python with Langchain and DSPy at work.
 
