@@ -26,8 +26,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am an AI engineer focused on building practical LLM systems for real-world products. My core interests are planning, reasoning, memory, and decision-making in LLM agents.
+I broadly work on/with LLMs for test-time scaling. My core interests are reasoning, memory and decision-making in LLM agents.
 
-At [Rezi](https://rezi.ai), I lead AI engineering work on multi-agent systems, retrieval, and information extraction for job applications and career workflows. I primarily use Python with Langchain and DSPy at work.
+At [Rezi](https://rezi.ai), I work on multi-agent systems, retrieval and recsys for job applications and career workflows. I primarily use Python with Langchain, DSPy and ElasticSearch at work.
 
-On the side, I like conducting toy experiments (often reproduction or tangential) mainly for test-time scaling methods. But lately, I have been spending some time learning RL for post-training. I document these experiments in my blogs.
+On the side, I like conducting toy experiments (often reproduction or tangential) mainly for test-time scaling methods. Lately, I have been spending some time in RL for post-training. I document these experiments in my blogs.
