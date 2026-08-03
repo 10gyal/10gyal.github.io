@@ -457,6 +457,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/tashi-tengyal", "_blank");
         },
       },{
+        id: 'social-x',
+        title: 'X',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://twitter.com/tastengyal", "_blank");
+        },
+      },{
         id: 'social-rss',
         title: 'RSS Feed',
         section: 'Socials',
