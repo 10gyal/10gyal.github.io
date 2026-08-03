@@ -58,15 +58,6 @@ cv:
           - Built a named entity recognition pipeline for structured skill extraction from resumes and job descriptions.
           - Contributed to platform growth from 500,000 to over 4 million users.
 
-    Projects:
-      - name: Infection Prediction from IoT Sensor Data
-        summary: Built CNN and LSTM models for pineapple disease detection using more than 2 million time-series data points.
-        highlights:
-          - Achieved 97 to 98 percent accuracy.
-          - Deployed models in production on commercial farms in Malaysia.
-        start_date: 2023-03
-        end_date: 2023-07
-
     Awards:
       - title: CSE Young Courage Award
         date: 2024
