@@ -78,6 +78,10 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.profile-small {
+  width: 85%;
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -87,6 +91,10 @@ ul.task-list input[type="checkbox"] {
         display: block;
       }
     }
+  }
+
+  .profile-small {
+    width: 25%;
   }
 }
 

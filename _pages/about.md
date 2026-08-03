@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: CS @ Seoul National University. Applied AI @ Rezi.ai
+subtitle: Applied AI @ Rezi AI
 
 profile:
   align: right

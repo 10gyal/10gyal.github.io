@@ -7,7 +7,7 @@ first_name: Tashi
 middle_name:
 last_name: Tengyal
 contact_note: >
-  The fastest way to reach me is by email.
+  The fastest way to reach me is by X/email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   AI engineer interested in planning, reasoning, memory, and decision-making capabilities of LLM agents.
 footer_text: >
@@ -42,12 +42,6 @@ repo_trophies:
 external_services:
   github_readme_stats_url: https://github-readme-stats.vercel.app
   github_profile_trophy_url: https://github-profile-trophy.vercel.app
-
-# -----------------------------------------------------------------------------
-# RSS Feed
-# -----------------------------------------------------------------------------
-# will use title and url fields
-# Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -204,7 +198,6 @@ plugins:
   - jekyll-archives-v2
   - jekyll-cache-bust
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
   - jekyll-jupyter-notebook
