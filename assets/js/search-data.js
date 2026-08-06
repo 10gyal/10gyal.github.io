@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-blog",
           title: "blog",
-          description: "",
+          description: "Notes and experiments.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/blog/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Selected projects and experiments.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -391,7 +391,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
+          section: "News",},{id: "projects-llms-for-job-markets-skill-extraction",
+          title: 'LLMs for Job Markets: Skill Extraction',
+          description: "Finetuning BERT for NER on llm annotated data for extracting different categories of skills from job postings",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/10_skill_extraction/";
+            },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
