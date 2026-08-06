@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-symmetric-latent-attribute-retrieval-does-not-close-the-retrieval-verification-gap-in-obliq-bench",
+        
+          title: "Symmetric Latent-Attribute Retrieval Does Not Close the Retrieval–Verification Gap in OBLIQ-Bench",
+        
+        description: "Testing whether indexing explicit reasoning-pattern cards makes oblique mathematical retrieval easier.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/obliq-bench-latent-attribute-retrieval/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
