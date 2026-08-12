@@ -121,7 +121,9 @@ If you're concerned about user privacy or GDPR compliance, consider these altern
 3. Get your **Client ID**
 4. In `_config.yml`, set `enable_openpanel_analytics: true`
 5. Add your Client ID: `openpanel_analytics: YOUR_CLIENT_ID` (format: UUID)
-6. Commit and push
+6. For a self-hosted OpenPanel instance, add its API URL:
+   `openpanel_api_url: https://analytics.example.com/api`
+7. Commit and push
 
 ---
 

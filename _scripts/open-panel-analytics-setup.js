@@ -7,6 +7,7 @@ window.op =
     (window.op.q = window.op.q || []).push(args);
   };
 window.op("init", {
+  apiUrl: "{{ site.openpanel_api_url | default: 'https://api.openpanel.dev' }}",
   clientId: "{{ site.openpanel_analytics }}",
   trackScreenViews: true,
   trackOutgoingLinks: true,
